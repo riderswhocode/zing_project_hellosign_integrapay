@@ -6,7 +6,7 @@ const urlEncodedParser = bodyParser.urlencoded({extended: false})
 const hsController = require('../controller/hellosign.controller')
 const mw = require('../middleware/ip_auth')
 
-router.get('/callback', hsController.callback_url)
+router.post('/callback', hsController.callback_url)
 
 router.get('/signature/list', hsController.list_signature_request)
 router.get('/signature/new', mw.list_templates, hsController.show_request_form)
