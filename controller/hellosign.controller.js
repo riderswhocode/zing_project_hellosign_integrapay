@@ -196,5 +196,5 @@ exports.create_template_form = (req, res) => {
 }
 
 exports.callback_url = (req, res) => {
-    res.send(req)
+    console.log(req)
 }
