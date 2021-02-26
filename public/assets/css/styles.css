@@ -1,0 +1,77 @@
+body {
+  margin: auto;
+  font-family: Poppins, sans-serif;
+  color: #404040;
+  position: relative;
+}
+
+.login-holder {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px;
+}
+
+.login-holder h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+.login-holder form {
+  padding: 1.5em;
+}
+
+.form-group {
+  position: relative;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+}
+
+.brand-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-center.logo-holder {
+  margin-bottom: 1.5em;
+}
+
+.template-content h3 {
+  padding: 1rem 1rem;
+  /*margin-bottom: 1em;*/
+  background-color: #eeeeee;
+}
+
+#btn-new-tempate {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.signature-content h3 {
+  padding: 1rem 1rem;
+  background-color: #eeeeee;
+}
+
+.form-holder {
+  /*padding: 1.5em;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.logo-holder {
+}
+
+.message-holder {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 50px 0px;
+}
+
