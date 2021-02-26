@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="3;url=/signature/list">
+    <title>Zing Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="text-center">
+    <nav class="navbar navbar-light navbar-expand-md" id="main-nav">
+        <div class="container-fluid"><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"><img src="assets/img/the-zing-project-logo.png" alt="zing-logo" width="40px" height="40px"></a>
+            <div
+                class="collapse navbar-collapse d-flex justify-content-start" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Templates</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Signature Request</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-start justify-content-lg-end" id="navcol-1">
+            <ul class="nav navbar-nav">
+                <li class="nav-item" role="presentation"></li>
+                <li class="nav-item" role="presentation"></li>
+                <li class="nav-item" role="presentation"></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="message-holder">
+        <% if(data.status == 'success') { %>
+            <h1 class="big-message" style="font-size: 83px;color: rgb(107,190,1);"> <%= data.big_message %> </h1>
+            <p class="small-message"> <%= data.small_message %> </p>
+        <% }  else { %>
+            <h1 class="big-message" style="font-size: 83px;color: rgb(248,62,50);"> <%= data.big_message %> </h1>
+            <p class="small-message"> <%= data.small_message %> </p>
+        <% } %>
+        <small style="font-style: italic;">Redirecting to Signature Request List in 3 seconds...</small>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
