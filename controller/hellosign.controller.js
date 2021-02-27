@@ -183,7 +183,7 @@ exports.show_request_form = (req, res) => {
         templates.templates.map(output => {
             template_list.push([output.template_id,output.title])
         })
-        res.render('agreement-form', {template_list: template_list})
+        res.render('signature-request-form', {template_list: template_list})
     })
     .catch(err => {
         console.log(err)

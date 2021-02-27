@@ -9,7 +9,7 @@ const mw = require('../middleware/ip_auth')
 router.post('/callback', hsController.callback_url)
 
 router.get('/signature/list', hsController.list_signature_request)
-router.get('/signature/new', mw.list_templates, hsController.show_request_form)
+router.get('/signature/new', hsController.show_request_form)
 router.post('/signature/create', urlEncodedParser, hsController.send_template)
 
 router.get('/templates/list', mw.list_templates, hsController.list_template)
